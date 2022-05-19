@@ -1,0 +1,53 @@
+@host = http://127.0.0.1:6000/v1/users
+
+### Get all users with offset & limit
+GET {{host}}/?fields=name&offset=0&limit=2 HTTP/1.1
+
+
+### Create new user
+POST {{host}}/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 0,
+    "username": "Milka",
+    "password": "milkshake123"
+}
+
+
+### Update user
+PUT {{host}}/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "username": "Tyler Joseph",
+    "password": "trashdragon"
+}
+
+
+### Delete user
+DELETE {{host}}/ HTTP/1.1
+Content-Type: application/json
+
+[2]
+
+
+
+### Get single user
+GET {{host}}/?fields=username HTTP/1.1
+
+
+### Update single user
+PUT {{host}}/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 0, 
+  "username": "Josh Dun",
+  "password": "dragontrash"
+}
+
+
+### Delete single user
+DELETE {{host}}/ HTTP/1.1
