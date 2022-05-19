@@ -5,7 +5,7 @@ GET {{host}}/?fields=name&offset=0&limit=2 HTTP/1.1
 
 
 ### Create new user
-POST {{host}}/ HTTP/1.1
+POST {{host}}/?token=dyNi6lQiQGFhK2yembj2EJjmi0XcEbwfAifeeDMp0QJVIRw3iRw1bWOMbJkPOFKIwDi.i7IXoeoO.ISyJAJDV4ytaUbWykZJ-9I0iUON6ujCZvUOIyLVUI_ei7eQ-Gcij81zCWBs91cxWKh HTTP/1.1
 Content-Type: application/json
 
 {
